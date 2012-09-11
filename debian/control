@@ -1,0 +1,17 @@
+Source: websockify
+Section: python
+Priority: optional
+Maintainer: Chuck Short <zulcss@ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), python-setuptools, python-dev (>= 2.6.6-3~)
+Standards-Version: 3.9.3
+
+Package: websockify
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, python-numpy
+Description: WebSocket to TCP proxy/bridge.
+ websockify was formerly named wsproxy and was part of the noVNC project.
+ .
+ At the most basic level, websockify just translates WebSockets traffic to normal
+ socket traffic. Websockify accepts the WebSockets handshake, parses it, 
+ and then begins forwarding traffic between the client and 
+ the target in both directions.
