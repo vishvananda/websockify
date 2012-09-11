@@ -1,0 +1,5 @@
+websockify (0.1.0~20120906-0ubuntu1) quantal; urgency=low
+
+  * Initial release.
+
+ -- Chuck Short <zulcss@ubuntu.com>  Thu, 06 Sep 2012 13:45:48 -0500
