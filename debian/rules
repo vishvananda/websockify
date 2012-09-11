@@ -7,8 +7,13 @@
 %:
 	dh $@  --with python2
 
+override_dh_clean:
+	make clean
+	dh_clean
+
 override_dh_auto_build:
+	make rebind.so
 	python setup.py build
 
 override_dh_auto_install:
-	python setup.py install  -O1 --skip-build --root=$(CURDIR)/debian/websockify --install-layout=deb
+	python setup.py install  -O1 --skip-build --root=$(CURDIR) --install-layout=deb
