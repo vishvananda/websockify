@@ -146,6 +146,11 @@ if __name__ == '__main__':
             help="SSL key file (if separate from cert)")
     parser.add_option("--ssl-only", action="store_true",
             help="disallow non-encrypted connections")
+    parser.add_option("--logfile", "-l", default=None,
+            help="log output to logfile", metavar="LOGFILE")
+    parser.add_option("--loglevel", "-L", default='4',
+            help="set loglevel 0-5 for none to debug",
+            metavar="LOGLEVEL")
     (opts, args) = parser.parse_args()
 
     try:
